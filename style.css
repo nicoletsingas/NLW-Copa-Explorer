@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121214;
+    background-image: url(assets/background-blue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+#app{
+    margin: auto;
+    padding-top: 52px;
+    width: fit-content;
+}
+
+ul{
+    list-style: none;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    padding: 32px 23px;
+    background-color: #1D1C19;
+    text-align: center;
+    margin: 0px 20px 32px 20px;
+    border-radius: 6px;
+    border-bottom: 2px solid #F7DD43;
+    
+}
+
+.card h2 {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #746615;
+    color: #F7DD43;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 53px;
+    align-items: center;
+}
+
+.card span {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 270px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card ul li + li {
+    padding-top: 24px;
+    border-top: 1px solid #323238;
+}
+
+.card strong{
+    color: white;
+    font-size: 36px;
+    line-height: 125%;
+}
+
+    /* Animation */
+
+    .card h2:hover, .card ul li strong:hover, .card ul li img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+
